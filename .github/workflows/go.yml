@@ -39,7 +39,7 @@ jobs:
         cmd: 'pwd'
 
     - name: Test
-      run: go test -v .
+      run: go test -race -coverprofile=coverage.txt -covermode=atomic ./...
 
 
     - name: Run sshClientK8s
