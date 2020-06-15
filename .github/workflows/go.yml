@@ -33,17 +33,18 @@ jobs:
     - name: Build
       run: go build -v .
 
-    - name: Test
-      run: go test -v .
-
     - name: K8s test
       uses: mchirico/kind_action@master
       with:
         cmd: 'pwd'
 
+    - name: Test
+      run: go test -v .
+
+
     - name: Run sshClientK8s
       run: |
-        ./sshClientK8s
+        ./sshClientK8s create
 
 
   test: # make sure the action works on a clean machine without building
