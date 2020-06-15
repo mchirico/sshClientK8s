@@ -55,4 +55,4 @@ jobs:
     - run: |
         ls ./cluster-key
         ls /tmp/.gopath/bin
-	cat /tmp/footloose.yaml
+        cat /tmp/footloose.yaml
