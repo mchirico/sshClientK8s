@@ -57,4 +57,4 @@ jobs:
         ls ./cluster-key
         ls /tmp/.gopath/bin
         cat /tmp/footloose.yaml
-        ./sshClientK8s exec "k get po --all-namespaces"
+        /tmp/.gopath/bin/sshClientK8s exec "k get po --all-namespaces"
