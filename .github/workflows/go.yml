@@ -44,3 +44,15 @@ jobs:
     - name: Run sshClientK8s
       run: |
         ./sshClientK8s
+
+
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+    - uses: mchirico/kind_action@master
+      with:
+        milliseconds: 1000
+    - run: |
+        ls ./cluster-key
+        ls /tmp/.gopath/bin
+	cat /tmp/footloose.yaml
