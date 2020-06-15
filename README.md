@@ -2,7 +2,8 @@
 
 ```
 # Install for an action
-GO111MODULE=on go install github.com/mchirico/sshClientK8s
+GO111MODULE=on go get github.com/mchirico/sshClientK8s
+
 
 
 ```
