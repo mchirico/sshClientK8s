@@ -40,6 +40,7 @@ jobs:
       uses: mchirico/kind_action@master
       with:
         cmd: 'pwd'
+
+    - name: Run sshClientK8s
       run: |
         ./sshClientK8s
-
