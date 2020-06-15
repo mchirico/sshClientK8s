@@ -110,8 +110,8 @@ func main() {
 
 	user := "root"
 	server := "0.0.0.0:9822"
-	//	command := "systemctl start docker && /gopath/bin/kind create cluster --config /root/kind.yaml"
-	command := "systemctl start docker && /gopath/bin/kind create cluster"
+	command := "systemctl start docker && /gopath/bin/kind create cluster --config /root/kind.yaml"
+	//command := "systemctl start docker && /gopath/bin/kind create cluster"
 
 	go exec(user, server, command, results)
 	/*	go exec(user, server, "kind create cluster --config kind.yaml", results)
