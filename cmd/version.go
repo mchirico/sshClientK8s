@@ -24,7 +24,7 @@ import (
 // versionCmd represents the version command
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "A brief description of your command",
+	Short: "prints verson:  0.0.1",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
